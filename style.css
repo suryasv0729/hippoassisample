@@ -4,16 +4,25 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  max-width: 1200px;
+  font-family: "Mona Sans";
+  width: 100vw;
 }
+section {
+  display: flex;
+}
+
 nav {
-  background-color: black;
+  background-color: #000;
   color: #fff;
   display: flex;
   justify-content: space-between;
   height: 65px;
-  width: 1500px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  width: auto;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .btns {
@@ -26,7 +35,7 @@ nav {
 .side_nav {
   background-color: black;
   height: 100vh;
-  width: 65px;
+  width: 50px;
   display: flex;
   flex-direction: column;
 
@@ -35,10 +44,16 @@ nav {
 }
 
 .card {
-  background-color: #ece2e2;
-  border-radius: 5px box-shadow 14px -11px 30px -7px rgba(0, 0, 0, 0.1);
-  height: 190px;
-  width: 255px;
+  background-color: #f7f8fb;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  height: 252px;
+  width: 278px;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .items {
@@ -46,6 +61,14 @@ nav {
   gap: 60px;
   margin-top: 50px;
   margin-left: 60px;
+  height: 500px;
+}
+.items-2 {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+  margin-left: 60px;
+  height: 500px;
 }
 
 .feather {
@@ -60,10 +83,17 @@ nav {
   margin-left: 20px;
   gap: 20px;
 }
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
 input {
-  height: 40px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 8px 16px 12px 12px;
   border-radius: 25px;
   border: 1px solid #fff;
   color: #fff;
@@ -74,19 +104,20 @@ button {
   height: 40px;
   width: 80px;
   border-radius: 25px;
-  background-color: rgb(86, 86, 224);
+  border: none;
+  background-color: #4080f0;
   color: #fff;
 }
 
-svg {
+.svg {
   height: 26px;
   width: 26px;
-  margin: 12px auto 12px auto;
+  margin: 24px auto 18px auto;
 }
 
 .set {
-  height: 2px;
-  width: 18px;
+  height: 1px;
+  width: 22px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -94,8 +125,117 @@ svg {
 
 img {
   object-fit: cover;
-  height: 125px;
-  width: 235px;
+  height: 164px;
+  width: 255px;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.opt {
+  height: 68px;
+  width: 400px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 200;
+}
+
+.ch {
+  height: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.des {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.desi {
+  display: flex;
+  gap: 14px;
+  padding-top: 10px;
+
+  margin-right: 10px;
+  text-align: center;
+}
+.desi div {
+  height: 20px;
+  width: 20px;
+}
+.desi svg {
+  height: 18px;
+  width: 18px;
+  display: block;
+  margin: auto;
+}
+.pen {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.del {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.dp {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dp:last-child {
+  opacity: 0.5;
+  font-size: 12px;
+}
+.pdiv {
+  margin-left: 10px;
+}
+
+.search-icon {
+  height: 16px;
+  width: 16px;
+  margin-left: -28px;
+  position: relative;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.6;
+  font-weight: 100;
+}
+
+.ch {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.opt div {
+  display: flex;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* sec2 */
+
+.items2-img {
+  height: 250px;
+  width: 400px;
+  margin-top: -20px;
 }
