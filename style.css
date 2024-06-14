@@ -239,3 +239,46 @@ img {
   width: 400px;
   margin-top: -20px;
 }
+
+.vid-opt {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 10px;
+}
+.opt-btn {
+  margin-left: 38px;
+}
+
+.vid-components {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.vid-components div {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 30px;
+  width: 150px;
+
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 15px;
+}
+
+.stats1 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.vid-stats div {
+  display: flex;
+  gap: 30px;
+  row-gap: 10px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 10px;
+  font-size: 14px;
+}
